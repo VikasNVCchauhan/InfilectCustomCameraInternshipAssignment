@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="125dp"
+    android:layout_margin="1dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <ImageView
+        android:src="@drawable/horizontal_recycler_view_women"
+        android:id="@+id/image_view_recycler_item_recycler_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/text_view_time_item_recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/background_text_view_time"
+        android:gravity="center"
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp"
+        android:text="13:13:40  O'clock"
+        android:textColor="@android:color/white"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:src="@drawable/ic_not_synced_white_24dp_24dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp" />
+</RelativeLayout>

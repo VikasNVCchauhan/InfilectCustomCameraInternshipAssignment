@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout_custom_"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentBottom="true"
+    android:background="@color/colorBlack"
+    android:orientation="horizontal"
+    android:paddingLeft="25dp"
+    android:paddingTop="10dp"
+    android:paddingRight="25dp"
+    android:paddingBottom="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:civ_border_width="1dp"
+        app:civ_border_color="@android:color/white"
+        android:id="@+id/circle_image_view_camera_activity_main"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_click_to_capture_images_camera_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_view_click_to_capture_camera_activity_main"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_camera_click_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click Image"
+            android:textColor="@android:color/white"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_rotate_camera_camera_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_view_switch_camera_camera_activity_main"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_switch_camera_white_24dp" />
+
+        <TextView
+            android:id="@+id/text_view_switch_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="@android:color/white"
+            android:textSize="11sp" />
+    </LinearLayout>
+</RelativeLayout>
